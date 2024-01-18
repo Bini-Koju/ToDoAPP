@@ -39,8 +39,8 @@ function displayItem() {
 
         let { item, duedate } = todoList[i];
         newHtml +=
-            ` <span>${item}</span>
-            <span>${duedate}</span>
+            ` <span class= "list">${item}</span>
+            <span class="list">${duedate}</span>
          <button class="delBtn" onclick="todoList.splice(${i}, 1); displayItem(); localStorage.setItem('newHtml', JSON.stringify(todoList));"> Delete </button>
         ` ;
     }

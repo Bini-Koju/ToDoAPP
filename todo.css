@@ -61,7 +61,7 @@ h1 {
 }
 
 /* responsive */
-@media (max-width:600px) {
+@media only screen and (max-width:600px) {
 
     .todo,
     .date {
@@ -70,13 +70,17 @@ h1 {
         padding: 3px;
     }
 
+    .list {
+        font-size: 13px;
+    }
+
     .gridContainer {
 
         display: grid;
-        grid-template-columns: 250px 130px 80px;
-        column-gap: 15px;
+        grid-template-columns: 35vw 30vw 15vw;
+        column-gap: 5vw;
         margin-top: 30px;
-        margin-left: 30px;
+        margin-left: 5px;
         row-gap: 20px;
         align-items: center;
         text-transform: uppercase;
@@ -86,19 +90,20 @@ h1 {
     .addBtn {
         background-color: rgb(1, 113, 1);
         padding: 10px;
-        border-radius: 7px;
+        border-radius: 5px;
         border: none;
         color: white;
+        font-size: 80%;
 
     }
 
     .delBtn {
         background-color: rgb(16, 64, 16);
         padding: 10px;
-        border-radius: 7px;
+        border-radius: 5px;
         border: none;
         color: white;
-
+        font-size: 80%;
     }
 
     .resetBtn {
